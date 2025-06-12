@@ -33,9 +33,7 @@ export default function PropertyList() {
                     <div className="p-5 bg-[#121826] h-full">
                         <h2 className="text-lg font-bold text-white">{item.title}</h2>
                         <span className="text-gray-400">{item.description}</span>
-                        <p className="text-sm text-gray-400 mt-1">
-                            🛏 {item.capacity.bedroom} bedrooms ・ 👥 {item.capacity.people} people
-                        </p>
+                        
                         <p className="text-sm text-white">{item.location}</p>
 
                         {item.superhost && (
@@ -46,6 +44,9 @@ export default function PropertyList() {
 
                         <div className="flex items-center justify-between mt-2">
                             <p className="text-purple-400 font-semibold">${item.price}/month</p>
+                            <p className="text-sm text-gray-400 mt-1">
+                            🛏 {item.capacity.bedroom} bedrooms ・ 👥 {item.capacity.people} people
+                        </p>
                             <span className="text-sm text-yellow-500">⭐ {item.rating}</span>
                         </div>
                     </div>
